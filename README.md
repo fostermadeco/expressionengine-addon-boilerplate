@@ -1,6 +1,5 @@
 # ExpressionEngine Add-ons
 **_`Note: Delete any file not listed in the add-on(s) you are setting up.`_** <br/>
-**_`Note: When naming your add-on remember that it should be all in lowecase. Except for when you enter the 'name' and $name variables`_** <br/>
 **_`Note: Add-ons folders should be placed in the system/user/addon folder.`_**
 
 ## Addon.setup.php file setup
@@ -15,12 +14,15 @@
 ## Plugins
 Required Folders/Files: 
 <br/>
-Replace `plugin` with the name of your plugins name
+Replace the word "plugin" in the filename with the snake case name of your plugin.<br />
 Place the files in your plugin folder
 
 - Folder plugin
   - addon.setup.php
   - pi.plugin.php
+  
+In the pi.plugin.php file, be sure to replace the class name of "Plugin_Name" with the
+???? case name of your plugin
 
 [ExpressionEngine Plugins](https://docs.expressionengine.com/latest/development/plugins.html)
 
