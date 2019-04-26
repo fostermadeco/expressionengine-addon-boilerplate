@@ -21,19 +21,23 @@ Place the files in your plugin folder
   - addon.setup.php
   - pi.plugin.php
   
-In the pi.plugin.php file, be sure to replace the class name of "Plugin_Name" with the
-???? case name of your plugin
+
+**_`In the pi.plugin.php file, be sure to replace the class name of "Plugin" with the
+name of your plugin with the first letter uppercased.`_**
 
 [ExpressionEngine Plugins](https://docs.expressionengine.com/latest/development/plugins.html)
 
 ## Extensions
 
-Replace `extension` with the name of your extensions name
+Replace `extension` with the name of your extensions name <br/>
 Place the files in your extension folder
 
 - Folder extension
   - addon.setup.php
   - ext.extension.php
+  
+**_`In the ext.extension.php file, be sure to replace the class name of "Extension_ext" with the
+name of your plugin with the first letter uppercased followed by _ext.`_**
   
 - File `ext.extension.php` variables
 - In the Properties area at the top of the file set these variables
