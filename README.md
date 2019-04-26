@@ -50,6 +50,7 @@ name of your plugin with the first letter uppercased followed by _ext.`_**
 - In the activate_extension() function set these variables
   - 'method'        : The method that the hook will run when triggered
   - 'hook'          : System event that will run the method [ExpressionEngine Hooks](https://docs.expressionengine.com/latest/development/extensions.html#multiple-extensions-same-hook)
+
 **_`Note: Navigate through ExpressionEngines Extension Hooks to see which hook works for you.`_**
 
 - In the settings() function 
@@ -60,8 +61,12 @@ name of your plugin with the first letter uppercased followed by _ext.`_**
   - type: i - text input, t - textarea, r - radio buttons, c - checkboxes, s - select, ms - multiselect
   - options: can be string (i, t) or array (r, c, s, ms)
   - default: array member, array of members, string, nothing
+  
+  
 **_`Note: In order to see your settings go back to yourprojectname.dev ExpressionEngine site click the developer dropdown then Add-ons. Then scroll to your extension that you stet the settings on at you will see a cog settings icon next to it.`_**
 <br/>
 [ExpressionEngine Extensions Setting](https://docs.expressionengine.com/latest/development/extensions.html#settings)
+
 <br/>
+
 [ExpressionEngine Extensions](https://docs.expressionengine.com/latest/development/extensions.html)
