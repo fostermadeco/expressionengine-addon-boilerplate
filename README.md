@@ -47,10 +47,19 @@ name of your plugin with the first letter uppercased followed by _ext.`_**
   - $settings_exist : They can be y/n
   - $docs_url       : Link to the docs for the extension
   
-- In the activate_extension() method set these variables
+- In the activate_extension() function set these variables
   - 'method'        : The method that the hook will run when triggered
   - 'hook'          : System event that will run the method [ExpressionEngine Hooks](https://docs.expressionengine.com/latest/development/extensions.html#multiple-extensions-same-hook)
-  <br/>
 **_`Note: Navigate through ExpressionEngines Extension Hooks to see which hook works for you.`_**
+
+- In the settings() function 
+- General pattern:
+  - $settings[variable_name] => array(type, options, default);
+  - variable_name: short name for the setting and the key for the language file variable
+- Types you can use
+  - type: i - text input, t - textarea, r - radio buttons, c - checkboxes, s - select, ms - multiselect
+  - options: can be string (i, t) or array (r, c, s, ms)
+  - default: array member, array of members, string, nothing
+**_`Note: In order to see your settings go back to yourprojectname.dev ExpressionEngine site click the developer dropdown then Add-ons. Then scroll to your extension that you stet the settings on at you will see a cog settings icon next to it.
 
 [ExpressionEngine Extensions](https://docs.expressionengine.com/latest/development/extensions.html)
